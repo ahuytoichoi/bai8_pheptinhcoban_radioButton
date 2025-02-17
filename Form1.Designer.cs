@@ -32,14 +32,15 @@
             this.lblSo1 = new System.Windows.Forms.Label();
             this.lblSo2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtSo1 = new System.Windows.Forms.TextBox();
-            this.txtSo2 = new System.Windows.Forms.TextBox();
+            this.txtso1 = new System.Windows.Forms.TextBox();
+            this.txtso2 = new System.Windows.Forms.TextBox();
             this.btnTinh = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbCong = new System.Windows.Forms.RadioButton();
-            this.rdbTru = new System.Windows.Forms.RadioButton();
-            this.rdbNhan = new System.Windows.Forms.RadioButton();
             this.rdbChia = new System.Windows.Forms.RadioButton();
+            this.rdbNhan = new System.Windows.Forms.RadioButton();
+            this.rdbTru = new System.Windows.Forms.RadioButton();
+            this.rdbCong = new System.Windows.Forms.RadioButton();
+            this.txtKQ = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,6 +61,7 @@
             this.lblSo1.Size = new System.Drawing.Size(24, 13);
             this.lblSo1.TabIndex = 1;
             this.lblSo1.Text = "so1";
+
             // 
             // lblSo2
             // 
@@ -79,19 +81,19 @@
             this.label4.TabIndex = 1;
             this.label4.Text = "kết quả";
             // 
-            // txtSo1
+            // txtso1
             // 
-            this.txtSo1.Location = new System.Drawing.Point(170, 74);
-            this.txtSo1.Name = "txtSo1";
-            this.txtSo1.Size = new System.Drawing.Size(100, 20);
-            this.txtSo1.TabIndex = 2;
+            this.txtso1.Location = new System.Drawing.Point(170, 74);
+            this.txtso1.Name = "txtso1";
+            this.txtso1.Size = new System.Drawing.Size(100, 20);
+            this.txtso1.TabIndex = 2;
             // 
-            // txtSo2
+            // txtso2
             // 
-            this.txtSo2.Location = new System.Drawing.Point(163, 109);
-            this.txtSo2.Name = "txtSo2";
-            this.txtSo2.Size = new System.Drawing.Size(100, 20);
-            this.txtSo2.TabIndex = 2;
+            this.txtso2.Location = new System.Drawing.Point(163, 109);
+            this.txtso2.Name = "txtso2";
+            this.txtso2.Size = new System.Drawing.Size(100, 20);
+            this.txtso2.TabIndex = 2;
             // 
             // btnTinh
             // 
@@ -116,27 +118,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // rdbCong
+            // rdbChia
             // 
-            this.rdbCong.AutoSize = true;
-            this.rdbCong.Location = new System.Drawing.Point(13, 25);
-            this.rdbCong.Name = "rdbCong";
-            this.rdbCong.Size = new System.Drawing.Size(49, 17);
-            this.rdbCong.TabIndex = 0;
-            this.rdbCong.TabStop = true;
-            this.rdbCong.Text = "cộng";
-            this.rdbCong.UseVisualStyleBackColor = true;
-            // 
-            // rdbTru
-            // 
-            this.rdbTru.AutoSize = true;
-            this.rdbTru.Location = new System.Drawing.Point(19, 59);
-            this.rdbTru.Name = "rdbTru";
-            this.rdbTru.Size = new System.Drawing.Size(37, 17);
-            this.rdbTru.TabIndex = 1;
-            this.rdbTru.TabStop = true;
-            this.rdbTru.Text = "trừ";
-            this.rdbTru.UseVisualStyleBackColor = true;
+            this.rdbChia.AutoSize = true;
+            this.rdbChia.Location = new System.Drawing.Point(18, 125);
+            this.rdbChia.Name = "rdbChia";
+            this.rdbChia.Size = new System.Drawing.Size(45, 17);
+            this.rdbChia.TabIndex = 3;
+            this.rdbChia.TabStop = true;
+            this.rdbChia.Text = "chia";
+            this.rdbChia.UseVisualStyleBackColor = true;
             // 
             // rdbNhan
             // 
@@ -149,16 +140,34 @@
             this.rdbNhan.Text = "nhân";
             this.rdbNhan.UseVisualStyleBackColor = true;
             // 
-            // rdbChia
+            // rdbTru
             // 
-            this.rdbChia.AutoSize = true;
-            this.rdbChia.Location = new System.Drawing.Point(18, 125);
-            this.rdbChia.Name = "rdbChia";
-            this.rdbChia.Size = new System.Drawing.Size(45, 17);
-            this.rdbChia.TabIndex = 3;
-            this.rdbChia.TabStop = true;
-            this.rdbChia.Text = "chia";
-            this.rdbChia.UseVisualStyleBackColor = true;
+            this.rdbTru.AutoSize = true;
+            this.rdbTru.Location = new System.Drawing.Point(19, 59);
+            this.rdbTru.Name = "rdbTru";
+            this.rdbTru.Size = new System.Drawing.Size(37, 17);
+            this.rdbTru.TabIndex = 1;
+            this.rdbTru.TabStop = true;
+            this.rdbTru.Text = "trừ";
+            this.rdbTru.UseVisualStyleBackColor = true;
+            // 
+            // rdbCong
+            // 
+            this.rdbCong.AutoSize = true;
+            this.rdbCong.Location = new System.Drawing.Point(13, 25);
+            this.rdbCong.Name = "rdbCong";
+            this.rdbCong.Size = new System.Drawing.Size(49, 17);
+            this.rdbCong.TabIndex = 0;
+            this.rdbCong.TabStop = true;
+            this.rdbCong.Text = "cộng";
+            this.rdbCong.UseVisualStyleBackColor = true;
+            // 
+            // txtKQ
+            // 
+            this.txtKQ.Location = new System.Drawing.Point(163, 159);
+            this.txtKQ.Name = "txtKQ";
+            this.txtKQ.Size = new System.Drawing.Size(100, 20);
+            this.txtKQ.TabIndex = 2;
             // 
             // Form1
             // 
@@ -167,14 +176,16 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnTinh);
-            this.Controls.Add(this.txtSo2);
-            this.Controls.Add(this.txtSo1);
+            this.Controls.Add(this.txtKQ);
+            this.Controls.Add(this.txtso2);
+            this.Controls.Add(this.txtso1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblSo2);
             this.Controls.Add(this.lblSo1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+        
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -188,14 +199,15 @@
         private System.Windows.Forms.Label lblSo1;
         private System.Windows.Forms.Label lblSo2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtSo1;
-        private System.Windows.Forms.TextBox txtSo2;
+        private System.Windows.Forms.TextBox txtso1;
+        private System.Windows.Forms.TextBox txtso2;
         private System.Windows.Forms.Button btnTinh;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rdbChia;
         private System.Windows.Forms.RadioButton rdbNhan;
         private System.Windows.Forms.RadioButton rdbTru;
         private System.Windows.Forms.RadioButton rdbCong;
+        private System.Windows.Forms.TextBox txtKQ;
     }
 }
 
